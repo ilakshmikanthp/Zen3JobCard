@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MaterialTable from 'material-table';
 import { Navbar, ButtonToolbar, Button } from 'react-bootstrap';
 import Aux from './Aux';
-import Axios from 'axios';
+// import Axios from 'axios';
 
 class JobCardTable extends Component {
 
@@ -32,7 +32,7 @@ class JobCardTable extends Component {
 
   getSheetValues = async () => {
     alert("data uploaded successfully");
-
+    
     const request = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/1Dra6B_3n2r5OgU3VjYrg31exQucwnPY52o6KtzuANHM/batchGet`,
       {
         headers: {
